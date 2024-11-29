@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-10-17T17:46:42.327+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/employdemy-solutions/settings/wcm/templates/ganesh-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="employdemy-solutions/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="employdemy-solutions/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2024-10-17T17:46:42.318+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="employdemy-solutions/components/container"
+                layout="responsiveGrid">
+                <text
+                    jcr:created="{Date}2024-10-17T17:22:42.137+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-10-17T17:46:17.903+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="employdemy-solutions/components/text"
+                    text="&lt;p>text sample is superb&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

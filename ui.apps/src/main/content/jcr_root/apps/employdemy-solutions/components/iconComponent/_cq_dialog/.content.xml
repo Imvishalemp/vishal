@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="iconComponent"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.teaser.v2.editor,core.wcm.components.image.v3.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_teaser_v2"
+    trackingFeature="core-components:teaser:v2">
+    <content
+        granite:class="cmp-teaser__editor cmp-image__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <properties
+                jcr:primaryType="nt:unstructured"
+                jcr:title="FullName"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                granite:class="cq-RichText-FixedColumn-column"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title
+                                        granite:class="cmp-teaser__editor-actionField-linkText"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Title"
+                                        fieldDescription="Enter the Title here"
+                                        fieldLabel="Title"
+                                        name="./title"
+                                        required="{Boolean}true"/>
+                                    <selecttitletype
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldDescription="Select the Title type here"
+                                        fieldLabel="Select Title Type"
+                                        name="./titleType"
+                                        required="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <select
+                                                jcr:primaryType="nt:unstructured"
+                                                text="select"/>
+                                            <red
+                                                jcr:primaryType="nt:unstructured"
+                                                text="h1"/>
+                                            <blue
+                                                jcr:primaryType="nt:unstructured"
+                                                text="h2"/>
+                                            <yellow
+                                                jcr:primaryType="nt:unstructured"
+                                                text="h3"/>
+                                        </items>
+                                    </selecttitletype>
+                                    <description
+                                        granite:class="cmp-teaser__editor-actionField-linkText"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        emptyText="Write Description here"
+                                        fieldDescription="Enter the Title here"
+                                        fieldLabel="Description"
+                                        name="./description"
+                                        required="{Boolean}true"/>
+                                    <select_bg_color
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldDescription="Select the colors here"
+                                        fieldLabel="Select Color"
+                                        name="./color"
+                                        required="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <select
+                                                jcr:primaryType="nt:unstructured"
+                                                text="select"/>
+                                            <red
+                                                jcr:primaryType="nt:unstructured"
+                                                text="red"/>
+                                            <blue
+                                                jcr:primaryType="nt:unstructured"
+                                                text="blue"/>
+                                            <yellow
+                                                jcr:primaryType="nt:unstructured"
+                                                text="yellow"/>
+                                        </items>
+                                    </select_bg_color>
+                                    <actions
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="add multiple icon and details&#xa;"
+                                        fieldLabel="Add Icon And Details"
+                                        name="./actions">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./actions">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <iconTitle
+                                                    granite:class="cmp-teaser__editor-actionField-linkText"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="iconTitle"
+                                                    name="./iconTitle"
+                                                    required="{Boolean}true"/>
+                                                <file
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                    class="cq-droptarget"
+                                                    fieldLabel="Icon"
+                                                    fileNameParameter="./fileName"
+                                                    fileReferenceParameter="./icon"
+                                                    mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                    name="./file"/>
+                                                <iconDescription
+                                                    granite:class="cmp-teaser__editor-actionField-linkText"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    emptyText="Icon Description"
+                                                    fieldLabel="Icon Description"
+                                                    name="./iconDescription"
+                                                    required="{Boolean}true"/>
+                                                <link
+                                                    granite:class="cmp-teaser__editor-actionField-linkText"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    emptyText="Enter Link"
+                                                    name="./pathLink"
+                                                    required="{Boolean}true"/>
+                                                <buttonname
+                                                    granite:class="cmp-teaser__editor-actionField-linkText"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Enter the button name here"
+                                                    name="./buttonName"
+                                                    required="{Boolean}true"/>
+                                            </items>
+                                        </field>
+                                    </actions>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </properties>
+        </items>
+    </content>
+</jcr:root>

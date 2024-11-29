@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="FullName"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_text_v1"
+    trackingFeature="core-components:text:v1">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="FullName"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <firstName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the First Name Here"
+                                                fieldLabel="FirstName"
+                                                name="./firstName"/>
+                                            <lastName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Last Name"
+                                                fieldLabel="LastName"
+                                                name="./lastName"/>
+                                            <checkbox1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldLabel="Check Box"
+                                                name="./checkbox1"
+                                                text="You Want Full Name"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties1>
+                    <properties2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Age"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <age
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Age Here"
+                                                fieldLabel="Age"
+                                                name="./age"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties2>
+                    <cq:styles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
