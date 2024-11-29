@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2024-10-21T12:54:06.047+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/employdemy-solutions/settings/wcm/templates/ganesh-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="employdemy-solutions/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="employdemy-solutions/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="employdemy-solutions/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/employdemy-solutions/us/en/site/header/master"/>
+            <container
+                jcr:lastModified="{Date}2024-10-17T17:27:43.980+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="employdemy-solutions/components/container"
+                editable="{Boolean}true"/>
+            <text
+                jcr:created="{Date}2024-10-17T17:24:59.667+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-21T12:54:06.047+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="employdemy-solutions/components/text"
+                text="&lt;p>Ganesh-idol Gavvala&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

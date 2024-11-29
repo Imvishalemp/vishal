@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/employdemy-solutions/"/>
+    <filter root="/apps/employdemy-solutions/clientlibs"/>
+    <filter root="/apps/employdemy-solutions/i18n"/>
+    <filter root="/apps/employdemy-solutions/components"/>
+</workspaceFilter>

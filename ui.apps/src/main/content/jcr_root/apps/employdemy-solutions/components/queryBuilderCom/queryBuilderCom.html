@@ -1,0 +1,15 @@
+<div class="query-results">
+    <h2>Query Results</h2>
+    
+    <sly data-sly-use.queryModel="com.employdemysolutions.core.models.QueryBuilderCom">
+        <sly data-sly-list.pagePaths="${queryModel.pages}">
+            <div class="result-item">
+                <p>
+                    <a href="http://localhost:4502${pagePaths}.html" target="_blank">
+                        ${pagePaths}
+                    </a>
+                </p>
+            </div>
+        </sly>
+    </sly>
+</div>

@@ -1,0 +1,20 @@
+<sly data-sly-use.model = "com.employdemysolutions.core.models.NamingModel">
+  ${model.fullName}
+  ${model.name}
+  <sly data-sly-test="${model.checkbox1}">
+    ${model.fullName}
+  </sly>
+  
+  <sly data-sly-test="${!model.checkbox1}">
+    ${model.firstName}
+  </sly>
+
+  <sly data-sly-test="${model.flag}">
+   You Are Allwoed to vote this year ${model.fullName}
+  </sly>
+  
+  <sly data-sly-test="${!model.flag}">
+    You Are Allwoed to vote this year  ${model.firstName}
+  </sly>
+  
+</sly>

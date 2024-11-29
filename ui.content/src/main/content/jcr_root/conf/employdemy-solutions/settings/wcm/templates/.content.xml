@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <page-content/>
+    <xf-web-variation/>
+    <rep:policy/>
+    <newtemplate/>
+    <newtemplate1/>
+    <Copy_x0020_of_x0020_newtemplate/>
+    <ganesh-template/>
+    <templateforexperiencefragment/>
+    <newsubpage/>
+    <newtemplatefrag3/>
+    <newtemplateforslingcompo/>
+    <newtemplateforslingcompo2/>
+</jcr:root>

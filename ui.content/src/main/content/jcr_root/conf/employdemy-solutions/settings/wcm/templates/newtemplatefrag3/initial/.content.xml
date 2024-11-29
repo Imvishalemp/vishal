@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/employdemy-solutions/settings/wcm/templates/newtemplatefrag3"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="employdemy-solutions/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2024-10-22T17:01:11.126+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="employdemy-solutions/components/container"
+            layout="responsiveGrid">
+            <experiencefragment
+                jcr:created="{Date}2024-10-22T16:52:09.597+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-22T16:52:23.114+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="employdemy-solutions/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/employdemy-solutions/us/en/site/header-experience-fragment/master"/>
+            <experiencefragment_1491491865
+                jcr:created="{Date}2024-10-22T16:53:59.020+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-10-22T16:54:10.507+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="employdemy-solutions/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/employdemy-solutions/us/en/site/footer-experience-fragment/master"/>
+        </root>
+    </jcr:content>
+</jcr:root>

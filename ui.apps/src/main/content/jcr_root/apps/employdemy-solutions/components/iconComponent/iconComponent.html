@@ -1,0 +1,25 @@
+<sly data-sly-use.clientlib="granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.all @ categories='iconComponent'}">
+</sly>
+<sly data-sly-use.model="com.employdemysolutions.core.models.IconComponent" />
+
+<div class="${model.color}">
+    <p class="${model.titleType}">${model.title}</p>
+    <p class="desc">Description: ${model.description @ context='html'}</p>
+
+    <sly data-sly-list.item="${model.actions}">
+        <div class="secMain">
+            <div>
+                <img class="image" src="${item.icon}" alt="no image" />
+            </div>
+            <div class="secDiv">
+                <p class="icon-title">${item.iconTitle}</p>
+                ${item.iconDescription}
+                <br><br>
+
+                <a class="link-button" href="${item.pathLink}">${item.buttonName}</a>
+                <br>
+            </div>
+        </div>
+    </sly>
+</div>

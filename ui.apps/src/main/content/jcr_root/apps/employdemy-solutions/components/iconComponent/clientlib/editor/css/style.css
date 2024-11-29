@@ -1,0 +1,49 @@
+
+.desc{
+    font-size: 16px;
+}
+
+.image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.secDiv{
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.secMain{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+.h1{
+    font-size: 32px;
+    color:green;
+}
+
+.h2{
+    font-size: 24px;
+}
+
+.h3{
+    font-size: 18px;
+}
+
+.h4{
+    font-size: 15px;
+}
+
+.red-color{
+            background-color: mintcream;
+
+    }
+
+.blue-color{
+    background-color: blue;
+}
